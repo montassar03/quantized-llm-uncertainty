@@ -1,0 +1,16 @@
+{
+  "mode": "bsr",
+  "bits": 5,
+  "seed": 20,
+  "dtype": "fp32",
+  "batch_size": 8,
+  "n_questions": 14042,
+  "accuracy": 0.6089588377723971,
+  "error": 0.3910411622276029,
+  "nll": 1.2496898174285889,
+  "ece": 0.2005667296391983,
+  "mean_mass_on_ABCD": 0.9959617257118225,
+  "min_mass_on_ABCD": 0.34514427185058594,
+  "seconds_quantize": 33.8,
+  "seconds_total": 1666.1
+}

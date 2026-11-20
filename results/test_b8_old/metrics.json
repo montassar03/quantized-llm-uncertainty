@@ -1,0 +1,12 @@
+{
+  "dtype": "fp32",
+  "batch_size": 8,
+  "n_questions": 200,
+  "accuracy": 0.465,
+  "error": 0.5349999999999999,
+  "nll": 1.3785122632980347,
+  "ece": 0.2238925850391388,
+  "mean_mass_on_ABCD": 0.9948639869689941,
+  "min_mass_on_ABCD": 0.9311472177505493,
+  "seconds": 17.0
+}

@@ -60,8 +60,9 @@ def evaluate_mmlu(model, tokenizer, dataset, batch_size: int = 8, device: str = 
         # with left padding, positions must start at 0 at the first real token
         position_ids = (enc.attention_mask.cumsum(-1) - 1).clamp(min=0)
         logits = model(input_ids=enc.input_ids,
-                       attention_mask=enc.attention_mask,
-                       position_ids=position_ids).logits[:, -1, :].float()
+                        attention_mask=enc.attention_mask,
+                        position_ids=position_ids,
+                        logits_to_keep=1).logits[:, -1, :].float()
         mass[idx] = torch.softmax(logits, dim=-1)[:, option_ids].sum(-1).cpu()
         probs[idx] = torch.softmax(logits[:, option_ids], dim=-1).cpu()
 

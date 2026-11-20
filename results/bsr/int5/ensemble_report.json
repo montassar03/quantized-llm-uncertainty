@@ -1,0 +1,30 @@
+{
+  "n_members": 20,
+  "n_questions": 14042,
+  "reference": {
+    "error": 0.3524426719840479,
+    "nll": 1.028166651725769,
+    "ece": 0.15131271190452125
+  },
+  "members": {
+    "error_mean": 0.3848597065945023,
+    "error_std": 0.005930223917253579,
+    "nll_mean": 1.0989639967679978,
+    "nll_std": 0.06547433863482456
+  },
+  "ensemble": {
+    "error": 0.3617718273750178,
+    "nll": 0.9206485748291016,
+    "ece": 0.08445929218358997
+  },
+  "diversity": {
+    "avg_member_loss": 1.0989639967679978,
+    "ambiguity": 0.12392219007015237,
+    "ensemble_loss": 0.9750418066978455,
+    "pairwise_disagreement": 0.24473834136687683,
+    "flip_rate_vs_reference": 0.19601908560034184,
+    "mean_mutual_information": 0.10349350422620773,
+    "mutual_information_wrong": 0.14110273122787476,
+    "mutual_information_right": 0.08217515796422958
+  }
+}
